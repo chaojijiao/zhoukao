@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app/content/css/sryle.scss">
+</head>
+<body ng-app="app">
+    <div class="wrap" ng-controller="indexController">
+        <header>
+           {{title}}
+        </header>
+        
+        <div class="nav">
+            <ul>
+                <li ng-repeat="nav in nav">{{nav}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="app/script/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller/indexController.js"></script>
+</body>
+</html>
